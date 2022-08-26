@@ -280,15 +280,15 @@ const pages: readonly MuiPage[] = [
       { pathname: '/guides/flow' },
     ],
   },
-  {
-    pathname: '/experimental-api',
-    title: 'Experimental APIs',
-    icon: 'ExperimentIcon',
-    children: [
-      { pathname: '/experimental-api/classname-generator', title: 'ClassName generator' },
-      { pathname: '/experimental-api/css-variables', title: 'CSS variables' },
-    ],
-  },
+  // {
+  //   pathname: '/experimental-api',
+  //   title: 'Experimental APIs',
+  //   icon: 'ExperimentIcon',
+  //   children: [
+  //     { pathname: '/experimental-api/classname-generator', title: 'ClassName generator' },
+  //     { pathname: '/experimental-api/css-variables', title: 'CSS variables' },
+  //   ],
+  // },
   {
     pathname: '/styles',
     title: 'Styles',
