@@ -9,7 +9,7 @@ import SvgMuiLogo from 'docs/src/icons/SvgMuiLogo';
 import HeaderNavBar from 'docs/src/components/header/HeaderNavBar';
 import HeaderNavDropdown from 'docs/src/components/header/HeaderNavDropdown';
 import ThemeModeToggle from 'docs/src/components/header/ThemeModeToggle';
-import { getCookie } from 'docs/src/modules/utils/helpers';
+// import { getCookie } from 'docs/src/modules/utils/helpers';
 import { useChangeTheme } from 'docs/src/modules/components/ThemeContext';
 import Link from 'docs/src/modules/components/Link';
 import { DeferredAppSearch } from 'docs/src/modules/components/AppFrame';
@@ -43,10 +43,10 @@ export default function AppHeader() {
 
   const t = useTranslate();
 
-  React.useEffect(() => {
-    const initialMode = getCookie('paletteMode') || 'system';
-    setMode(initialMode);
-  }, []);
+  // React.useEffect(() => {
+  //   const initialMode = getCookie('paletteMode') || 'system';
+  //   setMode(initialMode);
+  // }, []);
 
   const handleChangeThemeMode = (checked: boolean) => {
     const paletteMode = checked ? 'dark' : 'light';
@@ -84,7 +84,7 @@ export default function AppHeader() {
             <IconButton
               component="a"
               color="primary"
-              href="https://github.com/mui"
+              href="https://github.com/danielmana/luma-ui"
               data-ga-event-category="header"
               data-ga-event-action="github"
             >

@@ -103,6 +103,7 @@ declare module 'react-docgen' {
   interface UnionPropTypeDescriptor extends BasePropTypeDescriptor {
     name: 'union';
     value: readonly PropTypeDescriptor[];
+    elements: readonly PropTypeDescriptor[];
   }
   interface ElementTypePropTypeDescriptor extends BasePropTypeDescriptor {
     name: 'elementType';

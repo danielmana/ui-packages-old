@@ -1,0 +1,25 @@
+{
+  "componentDescription": "",
+  "propDescriptions": {
+    "classes": "Override or extend the styles applied to the component. See <a href=\"#css\">CSS API</a> below for more details.",
+    "color": "The color of the component. It supports both default and custom theme colors, which can be added as shown in the <a href=\"https://mui.com/material-ui/customization/palette/#adding-new-colors\">palette customization guide</a>."
+  },
+  "classDescriptions": {
+    "root": { "description": "Styles applied to the root element." },
+    "textTertiary": {
+      "description": "Styles applied to {{nodeName}} if {{conditions}}.",
+      "nodeName": "the root element",
+      "conditions": "<code>variant=\"text\"</code> and <code>color=\"tertiary\"</code>"
+    },
+    "outlinedTertiary": {
+      "description": "Styles applied to {{nodeName}} if {{conditions}}.",
+      "nodeName": "the root element",
+      "conditions": "<code>variant=\"outlined\"</code> and <code>color=\"tertiary\"</code>"
+    },
+    "containedTertiary": {
+      "description": "Styles applied to {{nodeName}} if {{conditions}}.",
+      "nodeName": "the root element",
+      "conditions": "<code>variant=\"contained\"</code> and <code>color=\"tertiary\"</code>"
+    }
+  }
+}

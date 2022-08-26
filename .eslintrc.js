@@ -146,7 +146,7 @@ module.exports = {
     // airbnb is using .jsx
     'react/jsx-filename-extension': ['error', { extensions: ['.js', '.tsx'] }],
     // Prefer <React.Fragment> over <>.
-    'react/jsx-fragments': ['error', 'element'],
+    // 'react/jsx-fragments': ['error', 'element'],
     // Enforces premature optimization
     'react/jsx-no-bind': 'off',
     // We are a UI library.
@@ -355,7 +355,7 @@ module.exports = {
       },
     },
     {
-      files: ['packages/*/src/**/*{.ts,.tsx,.js}'],
+      files: ['packages/*/src/**/*{.ts,.js}'],
       excludedFiles: ['*.d.ts', '*.spec.ts', '*.spec.tsx'],
       rules: {
         'no-restricted-imports': [

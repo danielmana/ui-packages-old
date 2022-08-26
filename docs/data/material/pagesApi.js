@@ -17,6 +17,7 @@ module.exports = [
   { pathname: '/material-ui/api/breadcrumbs' },
   { pathname: '/material-ui/api/button' },
   { pathname: '/material-ui/api/button-base' },
+  { pathname: '/material-ui/api/button-ext' },
   { pathname: '/material-ui/api/button-group' },
   { pathname: '/material-ui/api/card' },
   { pathname: '/material-ui/api/card-action-area' },

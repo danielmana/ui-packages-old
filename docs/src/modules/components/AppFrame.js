@@ -17,7 +17,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import NProgressBar from '@mui/docs/NProgressBar';
 import AppNavDrawer from 'docs/src/modules/components/AppNavDrawer';
 import AppSettingsDrawer from 'docs/src/modules/components/AppSettingsDrawer';
-import Notifications from 'docs/src/modules/components/Notifications';
+// import Notifications from 'docs/src/modules/components/Notifications';
 import MarkdownLinks from 'docs/src/modules/components/MarkdownLinks';
 import SkipLink from 'docs/src/modules/components/SkipLink';
 import PageContext from 'docs/src/modules/components/PageContext';
@@ -213,7 +213,7 @@ export default function AppFrame(props) {
                 <GitHubIcon fontSize="small" />
               </IconButton>
             </Tooltip>
-            <Notifications />
+            {/* <Notifications /> */}
             <Tooltip title={t('appFrame.toggleSettings')} enterDelay={300}>
               <IconButton color="primary" onClick={() => setSettingsOpen(true)} sx={{ px: '8px' }}>
                 <SettingsIcon fontSize="small" />
