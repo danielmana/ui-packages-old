@@ -18,7 +18,7 @@ export interface ButtonExtClasses {
   containedTertiary: string;
 }
 
-export type ButtonClassKey = keyof ButtonExtClasses;
+export type ButtonExtClassKey = keyof ButtonExtClasses;
 
 export function getButtonExtUtilityClass(slot: string): string {
   return generateUtilityClass('MuiButtonExt', slot);
