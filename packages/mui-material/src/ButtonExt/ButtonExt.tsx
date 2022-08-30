@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { generateUtilityClass, generateUtilityClasses } from '@mui/base';
-import { styled } from '@mui/material/styles';
+import { styled } from '../styles';
 import MuiButton, { ButtonProps as MuiButtonProps } from '../Button';
 import { capitalize } from '../utils';
 
