@@ -1,22 +1,22 @@
 import pagesApi from './pagesApi';
 
 const pages = [
-  {
-    pathname: '/material-ui/getting-started',
-    icon: 'DescriptionIcon',
-    children: [
-      { pathname: '/material-ui/getting-started/overview' },
-      { pathname: '/material-ui/getting-started/installation' },
-      { pathname: '/material-ui/getting-started/usage' },
-      { pathname: '/material-ui/getting-started/example-projects' },
-      { pathname: '/material-ui/getting-started/templates' },
-      { pathname: '/material-ui/getting-started/learn' },
-      { pathname: '/material-ui/getting-started/faq', title: 'FAQs' },
-      { pathname: '/material-ui/getting-started/supported-components' },
-      { pathname: '/material-ui/getting-started/supported-platforms' },
-      { pathname: '/material-ui/getting-started/support' },
-    ],
-  },
+  // {
+  //   pathname: '/material-ui/getting-started',
+  //   icon: 'DescriptionIcon',
+  //   children: [
+  //     { pathname: '/material-ui/getting-started/overview' },
+  //     { pathname: '/material-ui/getting-started/installation' },
+  //     { pathname: '/material-ui/getting-started/usage' },
+  //     { pathname: '/material-ui/getting-started/example-projects' },
+  //     { pathname: '/material-ui/getting-started/templates' },
+  //     { pathname: '/material-ui/getting-started/learn' },
+  //     { pathname: '/material-ui/getting-started/faq', title: 'FAQs' },
+  //     { pathname: '/material-ui/getting-started/supported-components' },
+  //     { pathname: '/material-ui/getting-started/supported-platforms' },
+  //     { pathname: '/material-ui/getting-started/support' },
+  //   ],
+  // },
   {
     pathname: '/material-ui/react-',
     scopePathnames: [
@@ -32,6 +32,7 @@ const pages = [
         pathname: '/material-ui/components/inputs',
         subheader: 'inputs',
         children: [
+          { pathname: '/material-ui/react-button-ext', title: 'Button Extended' },
           { pathname: '/material-ui/react-autocomplete' },
           { pathname: '/material-ui/react-button' },
           { pathname: '/material-ui/react-button-group' },
@@ -155,134 +156,134 @@ const pages = [
     icon: 'CodeIcon',
     children: pagesApi,
   },
-  {
-    pathname: '/material-ui/customization',
-    icon: 'CreateIcon',
-    children: [
-      {
-        pathname: '/material-ui/customization',
-        subheader: '/material-ui/customization/theme',
-        children: [
-          { pathname: '/material-ui/customization/theming' },
-          { pathname: '/material-ui/customization/palette' },
-          { pathname: '/material-ui/customization/dark-mode', title: 'Dark mode' },
-          { pathname: '/material-ui/customization/typography' },
-          { pathname: '/material-ui/customization/spacing' },
-          { pathname: '/material-ui/customization/breakpoints' },
-          { pathname: '/material-ui/customization/density' },
-          { pathname: '/material-ui/customization/z-index', title: 'z-index' },
-          { pathname: '/material-ui/customization/transitions' },
-          { pathname: '/material-ui/customization/theme-components', title: 'Components' },
-          { pathname: '/material-ui/customization/default-theme', title: 'Default Theme' },
-        ],
-      },
-      { pathname: '/material-ui/customization/how-to-customize' },
-      { pathname: '/material-ui/customization/color' },
-    ],
-  },
-  {
-    pathname: '/material-ui/guides',
-    title: 'How To Guides',
-    icon: 'VisibilityIcon',
-    children: [
-      { pathname: '/material-ui/guides/api', title: 'API design approach' },
-      { pathname: '/material-ui/guides/understand-mui-packages', title: 'Understand MUI packages' },
-      { pathname: '/material-ui/guides/typescript', title: 'TypeScript' },
-      { pathname: '/material-ui/guides/interoperability', title: 'Style library interoperability' },
-      { pathname: '/material-ui/guides/styled-engine' },
-      { pathname: '/material-ui/guides/minimizing-bundle-size' },
-      { pathname: '/material-ui/guides/composition' },
-      { pathname: '/material-ui/guides/routing' },
-      { pathname: '/material-ui/guides/server-rendering' },
-      { pathname: '/material-ui/guides/responsive-ui', title: 'Responsive UI' },
-      {
-        pathname: '/material-ui/guides/pickers-migration',
-        title: 'Migration from @material-ui/pickers',
-      },
-      { pathname: '/material-ui/guides/testing' },
-      { pathname: '/material-ui/guides/localization' },
-      { pathname: '/material-ui/guides/content-security-policy', title: 'Content Security Policy' },
-      { pathname: '/material-ui/guides/right-to-left', title: 'Right-to-left' },
-      { pathname: '/material-ui/guides/flow' },
-      { pathname: '/material-ui/guides/shadow-dom', title: 'Shadow DOM' },
-    ],
-  },
-  {
-    pathname: '/material-ui/experimental-api',
-    title: 'Experimental APIs',
-    icon: 'ExperimentIcon',
-    children: [
-      {
-        pathname: '/material-ui/experimental-api/classname-generator',
-        title: 'ClassName generator',
-      },
-      { pathname: '/material-ui/experimental-api/css-variables', title: 'CSS variables' },
-    ],
-  },
-  {
-    pathname: '/material-ui/discover-more',
-    icon: 'AddIcon',
-    children: [
-      { pathname: '/material-ui/discover-more/showcase' },
-      { pathname: '/material-ui/discover-more/related-projects' },
-      { pathname: '/material-ui/discover-more/design-kits' },
-      { pathname: '/material-ui/discover-more/roadmap' },
-      { pathname: '/material-ui/discover-more/backers', title: 'Sponsors & Backers' },
-      { pathname: '/material-ui/discover-more/vision' },
-      { pathname: '/material-ui/discover-more/changelog' },
-      { pathname: '/material-ui/discover-more/languages' },
-    ],
-  },
-  {
-    pathname: '/material-ui/migration',
-    title: 'Migration',
-    icon: 'BookIcon',
-    children: [
-      {
-        pathname: '/material-ui/migration/migration-grid-v2',
-        title: 'Migrating to Grid v2',
-      },
-      {
-        pathname: '/material-ui/migration',
-        subheader: 'Upgrade to v5',
-        children: [
-          {
-            pathname: '/material-ui/migration/migration-v4',
-            title: 'Migrating to v5: getting started',
-          },
-          {
-            pathname: '/material-ui/migration/v5-style-changes',
-            title: 'Breaking changes: style and theme',
-          },
-          {
-            pathname: '/material-ui/migration/v5-component-changes',
-            title: 'Breaking changes: components',
-          },
-          {
-            pathname: '/material-ui/migration/migrating-from-jss',
-            title: 'Migrating from JSS (optional)',
-          },
-          {
-            pathname: '/material-ui/migration/troubleshooting',
-            title: 'Troubleshooting',
-          },
-        ],
-      },
-      {
-        pathname: '/material-ui/migration',
-        subheader: 'Earlier versions',
-        children: [
-          { pathname: '/material-ui/migration/migration-v3', title: 'Migration from v3 to v4' },
-          { pathname: '/material-ui/migration/migration-v0x', title: 'Migration from v0.x to v1' },
-        ],
-      },
-    ],
-  },
-  {
-    pathname: 'https://mui.com/store/?utm_source=docs&utm_medium=referral&utm_campaign=sidenav',
-    title: 'Templates',
-    icon: 'ReaderIcon',
-  },
+  // {
+  //   pathname: '/material-ui/customization',
+  //   icon: 'CreateIcon',
+  //   children: [
+  //     {
+  //       pathname: '/material-ui/customization',
+  //       subheader: '/material-ui/customization/theme',
+  //       children: [
+  //         { pathname: '/material-ui/customization/theming' },
+  //         { pathname: '/material-ui/customization/palette' },
+  //         { pathname: '/material-ui/customization/dark-mode', title: 'Dark mode' },
+  //         { pathname: '/material-ui/customization/typography' },
+  //         { pathname: '/material-ui/customization/spacing' },
+  //         { pathname: '/material-ui/customization/breakpoints' },
+  //         { pathname: '/material-ui/customization/density' },
+  //         { pathname: '/material-ui/customization/z-index', title: 'z-index' },
+  //         { pathname: '/material-ui/customization/transitions' },
+  //         { pathname: '/material-ui/customization/theme-components', title: 'Components' },
+  //         { pathname: '/material-ui/customization/default-theme', title: 'Default Theme' },
+  //       ],
+  //     },
+  //     { pathname: '/material-ui/customization/how-to-customize' },
+  //     { pathname: '/material-ui/customization/color' },
+  //   ],
+  // },
+  // {
+  //   pathname: '/material-ui/guides',
+  //   title: 'How To Guides',
+  //   icon: 'VisibilityIcon',
+  //   children: [
+  //     { pathname: '/material-ui/guides/api', title: 'API design approach' },
+  //     { pathname: '/material-ui/guides/understand-mui-packages', title: 'Understand MUI packages' },
+  //     { pathname: '/material-ui/guides/typescript', title: 'TypeScript' },
+  //     { pathname: '/material-ui/guides/interoperability', title: 'Style library interoperability' },
+  //     { pathname: '/material-ui/guides/styled-engine' },
+  //     { pathname: '/material-ui/guides/minimizing-bundle-size' },
+  //     { pathname: '/material-ui/guides/composition' },
+  //     { pathname: '/material-ui/guides/routing' },
+  //     { pathname: '/material-ui/guides/server-rendering' },
+  //     { pathname: '/material-ui/guides/responsive-ui', title: 'Responsive UI' },
+  //     {
+  //       pathname: '/material-ui/guides/pickers-migration',
+  //       title: 'Migration from @material-ui/pickers',
+  //     },
+  //     { pathname: '/material-ui/guides/testing' },
+  //     { pathname: '/material-ui/guides/localization' },
+  //     { pathname: '/material-ui/guides/content-security-policy', title: 'Content Security Policy' },
+  //     { pathname: '/material-ui/guides/right-to-left', title: 'Right-to-left' },
+  //     { pathname: '/material-ui/guides/flow' },
+  //     { pathname: '/material-ui/guides/shadow-dom', title: 'Shadow DOM' },
+  //   ],
+  // },
+  // {
+  //   pathname: '/material-ui/experimental-api',
+  //   title: 'Experimental APIs',
+  //   icon: 'ExperimentIcon',
+  //   children: [
+  //     {
+  //       pathname: '/material-ui/experimental-api/classname-generator',
+  //       title: 'ClassName generator',
+  //     },
+  //     { pathname: '/material-ui/experimental-api/css-variables', title: 'CSS variables' },
+  //   ],
+  // },
+  // {
+  //   pathname: '/material-ui/discover-more',
+  //   icon: 'AddIcon',
+  //   children: [
+  //     { pathname: '/material-ui/discover-more/showcase' },
+  //     { pathname: '/material-ui/discover-more/related-projects' },
+  //     { pathname: '/material-ui/discover-more/design-kits' },
+  //     { pathname: '/material-ui/discover-more/roadmap' },
+  //     { pathname: '/material-ui/discover-more/backers', title: 'Sponsors & Backers' },
+  //     { pathname: '/material-ui/discover-more/vision' },
+  //     { pathname: '/material-ui/discover-more/changelog' },
+  //     { pathname: '/material-ui/discover-more/languages' },
+  //   ],
+  // },
+  // {
+  //   pathname: '/material-ui/migration',
+  //   title: 'Migration',
+  //   icon: 'BookIcon',
+  //   children: [
+  //     {
+  //       pathname: '/material-ui/migration/migration-grid-v2',
+  //       title: 'Migrating to Grid v2',
+  //     },
+  //     {
+  //       pathname: '/material-ui/migration',
+  //       subheader: 'Upgrade to v5',
+  //       children: [
+  //         {
+  //           pathname: '/material-ui/migration/migration-v4',
+  //           title: 'Migrating to v5: getting started',
+  //         },
+  //         {
+  //           pathname: '/material-ui/migration/v5-style-changes',
+  //           title: 'Breaking changes: style and theme',
+  //         },
+  //         {
+  //           pathname: '/material-ui/migration/v5-component-changes',
+  //           title: 'Breaking changes: components',
+  //         },
+  //         {
+  //           pathname: '/material-ui/migration/migrating-from-jss',
+  //           title: 'Migrating from JSS (optional)',
+  //         },
+  //         {
+  //           pathname: '/material-ui/migration/troubleshooting',
+  //           title: 'Troubleshooting',
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       pathname: '/material-ui/migration',
+  //       subheader: 'Earlier versions',
+  //       children: [
+  //         { pathname: '/material-ui/migration/migration-v3', title: 'Migration from v3 to v4' },
+  //         { pathname: '/material-ui/migration/migration-v0x', title: 'Migration from v0.x to v1' },
+  //       ],
+  //     },
+  //   ],
+  // },
+  // {
+  //   pathname: 'https://mui.com/store/?utm_source=docs&utm_medium=referral&utm_campaign=sidenav',
+  //   title: 'Templates',
+  //   icon: 'ReaderIcon',
+  // },
 ];
 
 export default pages;

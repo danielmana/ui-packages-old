@@ -1,0 +1,24 @@
+{
+  "props": {
+    "classes": { "type": { "name": "Partial" } },
+    "color": {
+      "type": {
+        "name": "union",
+        "description": "MuiButtonProps['color']<br>&#124;&nbsp;'tertiary'"
+      },
+      "default": "'primary'"
+    }
+  },
+  "name": "ButtonExt",
+  "styles": {
+    "classes": ["root", "textTertiary", "outlinedTertiary", "containedTertiary"],
+    "globalClasses": {},
+    "name": "MuiButtonExt"
+  },
+  "spread": true,
+  "forwardsRefTo": "HTMLButtonElement",
+  "filename": "/packages/mui-material/src/ButtonExt/ButtonExt.tsx",
+  "inheritance": { "component": "MuiButton", "pathname": "/material-ui/api/mui-button/" },
+  "demos": "<ul><li><a href=\"/material-ui/react-button/\">Buttons</a></li></ul>",
+  "cssComponent": false
+}

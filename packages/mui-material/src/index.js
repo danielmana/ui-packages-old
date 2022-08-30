@@ -57,6 +57,9 @@ export * from './Breadcrumbs';
 export { default as Button } from './Button';
 export * from './Button';
 
+export { default as ButtonExt } from './ButtonExt';
+export * from './ButtonExt';
+
 export { default as ButtonBase } from './ButtonBase';
 export * from './ButtonBase';
 
