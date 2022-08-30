@@ -35,9 +35,9 @@ jobs:
       - run: yarn release:build
       # double run to check if cleanup works
       - run: yarn release:build
-      - run: yarn release:changelog
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - run: yarn release:changelog
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: yarn validate-declarations
       - name: yarn release:tag
         run: |
